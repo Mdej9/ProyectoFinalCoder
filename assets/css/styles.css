@@ -1,0 +1,479 @@
+*{
+    box-sizing: border-box;
+}
+/*FUENTE GENERAL*/
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+/*TAMAÑOS Y ESTILOS GENERALES*/
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;
+color: black;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+/*ESTILOS GENERALES BOTONOES*/
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: black;
+    background-color: #FFE6E6;
+}
+
+button:hover{
+    background-color: #F2D1D1;
+}
+/*ESTILOS GENERALES CONTAINERS*/
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+/*FONDO DEL HEADER*/
+header{
+    background-color: rgb(245, 245, 245);
+    
+}
+/*DISEÑO DEL LOGO HEADER*/
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-family:'Dancing Script', cursive;
+    font-weight: bold;
+    color: #68A7AD;
+    font-size: 1.6em;
+}
+/*DISEÑO DEL CONTAINER HEADER*/
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*DISEÑO DEL MENU DE NAV*/
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+/*DISEÑO LINKS NAV*/
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+/*COLOR HOVER LINKS NAV*/
+header a:hover{
+    color: #68A7AD;
+}
+/*DISEÑO BANNER PRINCIPAL*/
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/foto-logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+/*DISEÑO SOBRE NOSOTROS CONTAINER*/
+#sobre-nosotros .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+/*DISEÑO GENERAL DESTACADOS Y TAMAÑOS*/
+.nuestros-amigurumis{
+    background-color: #DAEAF1;
+    color: white;
+    text-align: center;
+}
+
+.nuestros-amigurumis .container{
+    margin-top: 150px;
+    padding: 150px 12px;
+}
+
+.nuestros-amigurumis h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+.nuestros-amigurumis p{
+    display: none;
+}
+/*DISEÑO CARTAS TAMAÑOS*/
+.nuestros-amigurumis .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+/*DISEÑO CARTAS DESTACADOS*/
+.nuestros-amigurumis .destacados{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+/*DISEÑO FONDO DESTACADOS*/
+.destacados:first-child{
+    object-fit: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/grande.jpg");
+
+}
+
+.destacados:nth-child(2){
+    object-fit: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/mediano.jpg");
+}
+
+.destacados:nth-child(3){
+    object-fit: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/chico.jpg");
+}
+/*DISEÑO FONDO TAMAÑOS PRODUCTOS*/
+.carta:first-child{
+    object-fit: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/grande.jpg");
+
+}
+
+.carta:nth-child(2){
+    object-fit: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/mediano.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../img/chico.jpg");
+
+}
+/*DISEÑO NEWSLETTER*/
+#newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.envios-pagos{
+    background-color: white;
+    color: white;
+    text-align: center;
+}
+
+.envios-pagos .container{
+    margin-top: 50px;
+    padding: 50px 12px;
+}
+
+.envios-pagos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+.envios-pagos p{
+    color: black;
+    display: flex;
+}
+/*DISEÑO CONTACTO*/
+#contacto .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  
+  textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  label{
+    display: block; 
+    float: center;  
+  }
+
+li{
+    color: black;
+    font-weight: bold;
+}
+/*DISEÑO FOOTER*/
+  .footer-distribucion {
+    background-color: #C6DCE4;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+  }
+  /*DISEÑO P DEL FOOTER IZQUIERDA*/
+  .footer-distribucion .footer-izquierda p {
+    color: black;
+    font-size: 14px;
+    margin: 0;
+  }
+  /* Footer links */
+  .footer-distribucion p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+  }
+  
+  .footer-distribucion p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+  }
+  /*DISEÑO LINKS IZQUIERDA CON PUNTO SACANDOLE AL PRIMERO*/
+  .footer-distribucion .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: black;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distribucion .footer-links .link-1:before {
+    content: none;
+  }
+  /*DISEÑO FOOTER DERECHA, REDES*/
+  .footer-distribucion .footer-derecha {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+  }
+  
+  .footer-distribucion .footer-derecha a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #C6DCE4;
+    border-radius: 2px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition:all .25s;
+  }
+  /*AGRANDAR LOGO REDES AL PASAR CURSOR*/
+  .footer-distribucion .footer-derecha a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+  
+  .footer-distribucion p.footer-links a:hover{text-decoration:underline;}
+  
+  /*Media*/
+  
+  @media (max-width: 600px) {
+    .footer-distribucion .footer-izquierda, .footer-distribucion .footer-derecha {
+      text-align: center;
+    }
+    .footer-distribucion .footer-derecha {
+      float: none;
+      margin: 0 auto 20px;
+    }
+    .footer-distribucion .footer-izquierda p.footer-links {
+      line-height: 1.8;
+    }
+  }
+
+@media (min-width: 600px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #sobre-nosotros .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #sobre-nosotros .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #sobre-nosotros h2{
+        margin-top: 0px;
+    }
+
+    #sobre-nosotros .img-container{
+        background-image: url("../img/sobre-nosotros.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 400px; 
+    }
+
+    .nuestros-amigurumis .amigurumis-tamaños{
+        display: flex;
+        justify-content: center;
+    }
+
+    .nuestros-amigurumis p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .nuestros-amigurumis h2{
+        font-size: 4em;
+    }
+
+    .nuestros-amigurumis h3{
+        margin-top: 0;
+    }
+
+    #contacto .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #contacto .titulo{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #contacto h2{
+        margin-top: 0px;
+    }
+    input{
+        background-color: #fbfbfb; 
+        width: 408px; 
+        height: 40px; 
+        border-radius: 5px;  
+        border-style: solid; 
+        border-width: 1px; 
+        border-color: #68A7AD; 
+        margin-top: 10px;  
+        padding-left: 10px;
+        margin-bottom: 20px; 
+      }
+      textarea{
+        background-color: #fbfbfb; 
+        width: 400px; 
+        height: 150px; 
+        border-radius: 5px;  
+        border-style: solid; 
+        border-width: 1px; 
+        border-color: #68A7AD; 
+        margin-top: 10px;  
+        padding-left: 10px;
+        margin-bottom: 20px; 
+        padding-top: 15px; 
+      }
+      label{
+        display: block; 
+        float: center;  
+      }
+      .envios-pagos{
+          display: flex;
+      }
+}
